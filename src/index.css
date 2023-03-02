@@ -1,17 +1,23 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-@import-normalize;
+ :root {
+   --font: 'Montserrat', sans-serif;
+   --branco: #fff;
+   --preto: #000;
+   --cinza: #e2e2e2;
+ }
 
-:root {
-  --font: 'Montserrat', sans-serif;
-}
+ body {
+   font-family: var(--font);
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 
-body { 
-  font-family: var(--font);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+ }

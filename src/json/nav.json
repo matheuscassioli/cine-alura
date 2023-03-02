@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+         "navItem":"Inicio",
+         "path" : "/"
+    },
+    {
+        "id": 2,
+        "navItem":"Favoritos", 
+        "path": "/favoritos"
+    }
+]
