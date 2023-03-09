@@ -1,0 +1,10 @@
+.footer {
+    background-color: var(--preto);
+    padding: 1.5rem 0;
+}
+
+.texto {
+    text-align: center;
+    color: var(--branco);
+    font-size: 1rem;
+}

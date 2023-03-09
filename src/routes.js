@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from 'Pages/NotFound'
 import Header from 'Componentes/Header'
 import Favoritos from 'Pages/Favoritos'
+import Footer from "./Componentes/Footer"
 
 export default function AopRoutes() {
     return (
@@ -14,6 +15,7 @@ export default function AopRoutes() {
                 <Route path='/favoritos' element={<Favoritos />}></Route>
                 <Route path='*' element={<NotFound />}></Route>
             </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }

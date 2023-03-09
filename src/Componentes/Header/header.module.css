@@ -1,4 +1,4 @@
-.header {
+  .header {
     background-color: var(--preto);
     display: flex;
     color: var(--branco);
@@ -6,7 +6,7 @@
     padding: .5rem 7%;
     justify-content: space-between;
 
-}
+} 
 
 .nav {
     height: 100%;
@@ -21,14 +21,14 @@
 }
 
 .item {
-    color: var(--branco);
+    color: var(--branco) !important;
     text-decoration: none;
 }
 
 .underline {
-    text-decoration: underline !important;
+    text-decoration: underline !important; 
 }
 
 .noUnderline {
     text-decoration: none;
-}
+} 

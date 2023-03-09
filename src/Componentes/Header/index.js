@@ -3,6 +3,7 @@ import styles from './header.module.css'
 import logo from "./logo.png"
 import nav from "../../json/nav.json"
 import { Link, useLocation } from 'react-router-dom'
+import "rsuite/dist/rsuite.css";
 
 
 export default function Header() {
@@ -19,12 +20,15 @@ export default function Header() {
                     <ul className={styles.list}>
                         {
                             nav.map((key) => {
-                                return <Link key={key.id} to={key.path} className={`${styles.item} +  ${location.pathname === key.path ? styles.underline : ''}`}>{key.navItem}</Link>
+                                return <Link key={key.id} className={`${styles.item} +  ${location.pathname === key.path ? styles.underline : ''}`} to={key.path}>{key.navItem}</Link>
                             })
                         }
                     </ul>
                 </nav>
             </div>
         </header>
+
     )
 }
+
+{/* <Navbar.Brand href="#"></Navbar.Brand> LOGO */ }

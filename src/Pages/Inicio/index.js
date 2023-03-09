@@ -1,8 +1,14 @@
 import React from 'react'
-import styles from "./inicio.module.css"
+import Banner from 'Componentes/Banner'
+import Titulo from "Componentes/Titulo"
+import Links from 'Componentes/Links'
 
 export default function Inicio() {
     return (
-        <div className={styles.teste}><h1>Inicio</h1></div>
+        <>
+            <Banner imagem="1" />
+            <Titulo children="Um lugar para guardar seus vídeos e filmes!"/>
+            <Links />
+        </>
     )
 }
