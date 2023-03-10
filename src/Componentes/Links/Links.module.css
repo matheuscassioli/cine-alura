@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     flex-wrap: wrap;
 }
 
@@ -31,6 +31,13 @@
 
 .fav {
     background-image: url(./heart_off.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin-left: 1.5rem;
+}
+.favPreen{
+    background-image: url(./heart_on.png) !important;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;

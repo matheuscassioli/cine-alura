@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+  
  }
 
  :root {
@@ -16,6 +17,7 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    width: 100%;
+   overflow-y: auto;
  }
 
  code {

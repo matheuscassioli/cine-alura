@@ -1,0 +1,23 @@
+.notFoundPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgNot {
+    width: 25%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.ops {
+    text-align: center;
+}
+
+.verifique {
+    text-align: center;
+}
+
+.list {
+    padding: 1rem 0;
+}

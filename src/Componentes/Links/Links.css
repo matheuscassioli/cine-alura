@@ -1,0 +1,14 @@
+.fav {
+    background-image: url(./heart_off.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin-left: 1.5rem;
+}
+.favPreen{
+    background-image: url(./heart_on.png) !important;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin-left: 1.5rem;
+}
