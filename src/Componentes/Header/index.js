@@ -2,10 +2,8 @@ import React from 'react'
 import styles from './header.module.css'
 import logo from "./logo.png"
 import nav from "../../json/nav.json"
-import { Link, useLocation } from 'react-router-dom'
-import "rsuite/dist/rsuite.css";
-
-
+import { Link, useLocation } from 'react-router-dom' 
+ 
 export default function Header() {
 
     const location = useLocation();
