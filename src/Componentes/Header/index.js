@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header className={styles.header} >
             <div className={styles.headerLeft}>
-                <img src={logo} alt="Logo Cine Alura" />
+                <img src={logo} alt="Logo Cine Alura Cine" />
             </div>
             <div className={styles.headerRight}>
                 <nav className={styles.nav}>
