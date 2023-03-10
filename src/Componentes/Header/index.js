@@ -9,7 +9,7 @@ export default function Header() {
     const location = useLocation();
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} >
             <div className={styles.headerLeft}>
                 <img src={logo} alt="Logo Cine Alura" />
             </div>
