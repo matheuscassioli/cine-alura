@@ -6,6 +6,7 @@
     gap: 1rem;
     margin: 0 0 1rem 0;
     flex-wrap: wrap;
+    min-height: 180px;
 }
 
 .link {
@@ -36,7 +37,8 @@
     background-repeat: no-repeat;
     margin-left: 1.5rem;
 }
-.favPreen{
+
+.favPreen {
     background-image: url(./heart_on.png) !important;
     width: 30px;
     height: 30px;
