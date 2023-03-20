@@ -19,7 +19,6 @@ export default function Favoritos() {
                 }
             })
         })
-
     }, [])
     return (
         <>
@@ -27,14 +26,14 @@ export default function Favoritos() {
             <Titulo children="Meus Favoritos" />
             <div className={styles.links}>
                 {Object.keys(favs).map(key => {
-                    return <div key={favs.id+Math.random()} className={styles.link} >
+                    return <div key={favs.id + Math.random()} className={styles.link} >
                         <div className={styles.img} data={favs.id}>
-                           <img src={favs.capa} className={styles.capa}></img>
-                             <h4 className={styles.titulo}>{favs.titulo}</h4>   
+                            <img src={favs.capa} className={styles.capa}></img>
+                            <h4 className={styles.titulo}>{favs.titulo}</h4>
                         </div>
                     </div>
-                }
-                )}
+                })}
+                
             </div>
         </>
     )
