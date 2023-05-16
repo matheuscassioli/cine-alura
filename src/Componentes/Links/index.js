@@ -12,16 +12,16 @@ export default function Links() {
     const [favs, setFavs] = useState([])
 
     const changeBgFav = (e) => {
-        e.target.classList.toggle('favPreen') 
+        e.target.classList.toggle('favPreen')
         let data = e.target.parentNode.getAttribute('data')
         if (e.target.classList.contains('favPreen')) {
             if (favs.hasOwnProperty(data)) {
                 console.log('sim')
-            } else {    
+            } else {
                 favs.push(data)
             }
             dispatch({ type: SET_FAVS, favs: favs })
-        } else{
+        } else {
             var indice = favs.indexOf(data);
             favs.splice(indice, 1)
             dispatch({ type: SET_FAVS, favs: favs })
@@ -40,7 +40,7 @@ export default function Links() {
                     </div>
                 </div>
             }
-            )} 
+            )}
         </div>
     )
 }

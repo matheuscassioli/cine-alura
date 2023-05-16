@@ -11,14 +11,15 @@ export default function Favoritos() {
 
     useEffect(() => {
         let numbers = store.getState().favs
-
+        let arr = []
         Object.keys(numbers == undefined ? '' : numbers).map(key => {
             Object.keys(link).filter(k => {
                 if (link[k].id == numbers[key]) {
-                    setFavs(link[k])
+                    arr.push(link[k])
                 }
             })
         })
+        setFavs(arr)
     }, [])
     return (
         <>
@@ -26,14 +27,13 @@ export default function Favoritos() {
             <Titulo children="Meus Favoritos" />
             <div className={styles.links}>
                 {Object.keys(favs).map(key => {
-                    return <div key={favs.id + Math.random()} className={styles.link} >
-                        <div className={styles.img} data={favs.id}>
-                            <img src={favs.capa} className={styles.capa}></img>
-                            <h4 className={styles.titulo}>{favs.titulo}</h4>
+                    return <div key={favs[key].id} className={styles.link} >
+                        <div className={styles.img} data={favs[key].id}>
+                            <img src={favs[key].capa} className={styles.capa}></img>
+                            <h4 className={styles.titulo}>{favs[key].titulo}</h4>
                         </div>
                     </div>
                 })}
-                
             </div>
         </>
     )
